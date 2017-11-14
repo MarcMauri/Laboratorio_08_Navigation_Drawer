@@ -78,10 +78,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if (fragmentTx) {
-            // Renderizar fragment
+            changeFragment(fragment, item);
         }
 
         return true;
+    }
+
+    private void changeFragment(Fragment fragment, MenuItem item) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_frame, fragment)
+                .commit();
+
+        // Marca el item como clickeado
+        item.setChecked(true);
+        // Actualizamos el titulo del toolbar
+        getSupportActionBar().setTitle(item.getTitle());
+        // Cerramos el menu
+        drawerLayout.closeDrawers();
     }
 
     private void bindUI() {

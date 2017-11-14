@@ -9,22 +9,17 @@ import android.view.ViewGroup;
 
 import app.android.mmauri.laboratorio_08_navigation_drawer.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class AlertsFragment extends Fragment {
 
-
     public AlertsFragment() {
-        // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alerts, container, false);
+        View view = inflater.inflate(R.layout.fragment_alerts, container, false);
+        return view;
     }
 
 }
