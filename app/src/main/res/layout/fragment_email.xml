@@ -2,13 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="app.android.mmauri.laboratorio_08_navigation_drawer.Fragments.EmailFragment">
 
     <TextView
+        android:id="@+id/textViewEmail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="@string/your_email"
         android:textSize="24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabWriteEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_write_email"
+        app:fabSize="normal" />
 
 </FrameLayout>
