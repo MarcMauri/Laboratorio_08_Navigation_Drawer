@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_mail"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/email" />
+        <item
+            android:id="@+id/menu_alerts"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/alerts" />
+        <item
+            android:id="@+id/menu_info"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/information" />
+    </group>
+
+    <item android:title="@string/more_options">
+        <menu>
+            <item
+                android:id="@+id/menu_switch"
+                android:checkable="false"
+                android:title="@string/option"
+                app:actionLayout="@layout/switch_item" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">Laboratorio_08_Navigation_Drawer</string>
+    <string name="app_name">Menufy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_name">Marc Mauri</string>
+    <string name="email">Email</string>
+    <string name="alerts">Alerts</string>
+    <string name="information">Information</string>
+    <string name="option">Option</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="more_options">More options</string>
+    <string name="your_email">YOUR EMAIL</string>
+    <string name="see_more_info">See More Info</string>
+    <string name="info_dialog_message">This alert dialog is just to show a normal informative message to the user, nothing to interact with</string>
+    <string name="info_dialog_title">Information</string>
+    <string name="got_it">Got it</string>
+    <string name="mail_dialog_title">EMAIL</string>
+    <string name="mail_dialog_message">Type your email address to be displayed in the middle of the screen</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="alerts_enabled">Alerts Enabled</string>
+    <string name="alerts_disabled">Alerts Disabled</string>
+    <string name="enable_disable_alerts">Enable / Disable Alerts</string>
+    <string name="alerts_dialog_title">ALERTS</string>
+    <string name="alerts_dialog_message">Play with the switch below :)</string>
 </resources>
