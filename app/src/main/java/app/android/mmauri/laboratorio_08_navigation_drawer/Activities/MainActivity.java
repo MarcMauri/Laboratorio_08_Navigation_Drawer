@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private Switch optionSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Configurar comportamiento de las opciones del menu
         navigationView.setNavigationItemSelectedListener(this);
-
     }
 
     private void setToolbar() {
