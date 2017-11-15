@@ -7,6 +7,7 @@
         android:id="@+id/editTextMail"
         android:layout_width="match_parent"
         android:layout_marginStart="30dp"
+        android:inputType="textEmailAddress"
         android:layout_marginEnd="30dp"
         android:layout_height="wrap_content" />
 
