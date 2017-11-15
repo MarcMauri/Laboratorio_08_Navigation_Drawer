@@ -1,10 +1,10 @@
 package app.android.mmauri.laboratorio_08_navigation_drawer.Fragments;
 
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +14,7 @@ import app.android.mmauri.laboratorio_08_navigation_drawer.R;
 public class InfoFragment extends Fragment implements View.OnClickListener {
 
     private FloatingActionButton fabMoreInfo;
+    AlertDialog.Builder builder;
 
     public InfoFragment() {
     }
@@ -36,10 +37,10 @@ public class InfoFragment extends Fragment implements View.OnClickListener {
     }
 
     private void showInfoDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.info_dialog_title);
         builder.setMessage(R.string.info_dialog_message);
-        builder.setNeutralButton(R.string.got_it,null);
+        builder.setNeutralButton(R.string.got_it, null);
         builder.create().show();
     }
 }

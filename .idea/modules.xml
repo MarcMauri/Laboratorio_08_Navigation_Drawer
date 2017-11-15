@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Laboratorio_08_Navigation_Drawer.iml" filepath="$PROJECT_DIR$/Laboratorio_08_Navigation_Drawer.iml" />
-      <module fileurl="file://D:\android-projects\Curso\Laboratorio_08_Navigation_Drawer\Laboratorio_08_Navigation_Drawer.iml" filepath="D:\android-projects\Curso\Laboratorio_08_Navigation_Drawer\Laboratorio_08_Navigation_Drawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\android-projects\Curso\Laboratorio_08_Navigation_Drawer\app\app.iml" filepath="D:\android-projects\Curso\Laboratorio_08_Navigation_Drawer\app\app.iml" />
     </modules>
   </component>
 </project>

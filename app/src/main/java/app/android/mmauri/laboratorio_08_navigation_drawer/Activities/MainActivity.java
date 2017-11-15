@@ -1,15 +1,14 @@
 package app.android.mmauri.laboratorio_08_navigation_drawer.Activities;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -19,7 +18,7 @@ import app.android.mmauri.laboratorio_08_navigation_drawer.Fragments.EmailFragme
 import app.android.mmauri.laboratorio_08_navigation_drawer.Fragments.InfoFragment;
 import app.android.mmauri.laboratorio_08_navigation_drawer.R;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, CompoundButton.OnCheckedChangeListener {
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -36,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Configurar comportamiento de las opciones del menu
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Recuperamos el ActionView del Item "Option" con el switch asociado, del menu del NavigationView
+        optionSwitch = (Switch) navigationView.getMenu().findItem(R.id.switch_in_nav_options).getActionView();
+        optionSwitch.setOnCheckedChangeListener(this);
     }
 
     private void setToolbar() {
@@ -105,5 +108,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void bindUI() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navView);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (isChecked)
+            Toast.makeText(this, R.string.option_checked, Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(this, R.string.option_unchecked, Toast.LENGTH_SHORT).show();
     }
 }

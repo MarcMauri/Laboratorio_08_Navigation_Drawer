@@ -25,4 +25,6 @@
     <string name="enable_disable_alerts">Enable / Disable Alerts</string>
     <string name="alerts_dialog_title">ALERTS</string>
     <string name="alerts_dialog_message">Play with the switch below :)</string>
+    <string name="option_checked">The option is checked</string>
+    <string name="option_unchecked">The option is unchecked</string>
 </resources>
