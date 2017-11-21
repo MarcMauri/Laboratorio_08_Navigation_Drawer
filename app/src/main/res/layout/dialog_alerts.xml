@@ -2,9 +2,9 @@
     android:id="@+id/switch_alert_dialog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingStart="25dp"
     android:paddingEnd="20dp"
+    android:paddingStart="25dp"
+    android:paddingTop="10dp"
     android:text="@string/enable_disable_alerts"
     android:textOff="@string/off"
     android:textOn="@string/on" />

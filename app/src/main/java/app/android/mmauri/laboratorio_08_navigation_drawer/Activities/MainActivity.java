@@ -44,8 +44,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        /* Para insertar la hamburguesa abre-menu */
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawerLayout.openDrawer(Gravity.START);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void setDefaultFragment() {
@@ -92,17 +105,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setTitle(item.getTitle());
         // Cerramos el menu
         drawerLayout.closeDrawers();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                drawerLayout.openDrawer(Gravity.START);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     private void bindUI() {
